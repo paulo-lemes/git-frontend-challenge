@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
     type: "loop",
     perPage: 1,
     autoplay: true,
-    interval: 10000,
+    interval: 5000,
   }).mount();
 });
 
 function openSideNav() {
-  document.getElementById("nav-links").style.width = "90%";
+  document.getElementById("sidebar").style.width = "90%";
   const overlay = document.createElement("div");
   overlay.classList = "overlay";
   overlay.addEventListener("click", () => {
@@ -18,7 +18,7 @@ function openSideNav() {
 }
 
 function closeSideNav() {
-  document.getElementById("nav-links").style.width = "0";
+  document.getElementById("sidebar").style.width = "0";
   const overlay = document.querySelector(".overlay");
   overlay.remove();
 }
