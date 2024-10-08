@@ -1,19 +1,31 @@
+@import url(styles/header.css); 
+
+:root {
+  --primary-color: #0c4a82;
+  --secondary-color: #aaa9a9;
+  --base-color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
   line-height: 1;
   font-family: sans-serif;
+  color: var(--secondary-color);
+  transition: 0.5s;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -22,13 +34,18 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: #0c4a82;
+}
+
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-button, input {
+button,
+input {
   font-family: inherit;
   font-size: 100%;
   border: none;
