@@ -109,7 +109,7 @@ input {
 .content img {
   max-width: 20rem;
   max-height: 15rem;
-  aspect-ratio: 1.5;
+  object-fit: contain;
 }
 
 @media (max-width: 1000px) {

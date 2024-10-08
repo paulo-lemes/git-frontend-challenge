@@ -22,9 +22,18 @@ nav {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 0.25rem;
   font-weight: 500;
   overflow: hidden;
+}
+
+.nav-links a {
+  padding: 0.5rem;
+}
+
+.arrow {
+  display: inline-block;
+  transform: rotate(90deg);
 }
 
 .menu-icon {
@@ -45,10 +54,6 @@ nav {
   nav {
     padding: 0.5rem 5rem;
     font-size: 1.2rem;
-  }
-
-  .nav-links {
-    gap: 1rem;
   }
 }
 
@@ -84,16 +89,20 @@ nav {
 .submenu {
   display: none;
   position: absolute;
-  background-color: var(--primary-color);
   color: var(--base-color);
-  margin: 0;
   font-size: 1rem;
   padding: 0.15rem;
+  padding-top: 0.5rem;
   z-index: 1;
 }
 
+.submenu li {
+  background-color: var(--primary-color);
+}
+
 .submenu li a:hover {
-  color: var(--secondary-color);
+  color: var(--base-color);
+  font-weight: 600;
 }
 
 .nav-links li:hover > .submenu {
