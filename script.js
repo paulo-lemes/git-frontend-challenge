@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide(".splide", {
+    type: "loop",
+    perPage: 1,
+    autoplay: true,
+    interval: 10000,
+    gap: "1rem",
+  }).mount();
+});
+
 function openSideNav() {
   document.getElementById("nav-links").style.width = "90%";
   const overlay = document.createElement("div");

@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+    />
     <title>Teste - Grupo Ideal Trends</title>
   </head>
+
   <body>
     <header>
       <div id="phone-contacts">
         <p>11 1234-5678</p>
         <p>11 8765-4321</p>
       </div>
+
       <nav>
         <a href="#">
           <img
@@ -20,9 +26,11 @@
             alt="Logotipo Grupo Ideal Trends"
           />
         </a>
+
         <button id="menu-icon" type="button" onclick="openSideNav()">
           &#9776;
         </button>
+
         <ul id="nav-links" class="side-nav">
           <li>
             <a
@@ -32,14 +40,18 @@
               >&times;</a
             >
           </li>
+
           <li>
             <a href="#">HOME</a>
           </li>
+
           <li>
             <a href="#">EMPRESA</a>
+
             <ul class="submenu">
               <li><a href="#">SUBMENU 1</a></li>
               <li><a href="#">SUBMENU 1</a></li>
+
               <li>
                 <a href="#">SUBMENU 1</a>
                 <ul class="submenu">
@@ -50,23 +62,40 @@
               </li>
             </ul>
           </li>
+
           <li>
             <a href="#">CLIENTES</a>
           </li>
+
           <li>
             <a href="#">CONTATO</a>
           </li>
         </ul>
       </nav>
     </header>
+
     <main>
       <section id="slider">
-        <div class="slide"></div>
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="./assets/git-companies.png" alt="Companhias do Grupo Ideal Trends" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/git-banner.jpg" alt="Banner Grupo Ideal Trends" />
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
+
       <section id="content">
         <div>
           <h1 class="">TESTE DE HTML E CSS</h1>
+
           <p>Quesitos de avaliação:</p>
+
           <ul>
             <li>Organização do código (quanto mais limpo melhor);</li>
             <li>Nível de detalhismo (quanto mais idêntico melhor);</li>
@@ -74,16 +103,24 @@
               Tempo de desenvolvimento (seja sincero ao enviar o tempo gasto);
             </li>
           </ul>
+
           <p>
             Ao finalizar o teste, envie zipado o código para o e-mail com o
             tempo gasto e seu cv anexado.
           </p>
+
           <p>Obrigado e boa sorte!</p>
         </div>
-        <img src="./assets/worldmap-banner.png" alt="Logotipo Grupo Ideal Trends" />
+
+        <img
+          src="./assets/worldmap-banner.png"
+          alt="Logotipo Grupo Ideal Trends"
+        />
       </section>
+
       <section id="featured-boxes">
         <h2>BOXES DE DESTAQUE</h2>
+
         <div>
           <article class="box">
             <a href="#" target="_blank" rel="noopener noreferrer">
@@ -96,6 +133,7 @@
               </figure>
             </a>
           </article>
+
           <article class="box">
             <a href="#" target="_blank" rel="noopener noreferrer">
               <figure>
@@ -107,6 +145,7 @@
               </figure>
             </a>
           </article>
+
           <article class="box">
             <a href="#" target="_blank" rel="noopener noreferrer">
               <figure>
@@ -118,6 +157,7 @@
               </figure>
             </a>
           </article>
+
           <article class="box">
             <a href="#" target="_blank" rel="noopener noreferrer">
               <figure>
@@ -132,23 +172,30 @@
         </div>
       </section>
     </main>
+
     <footer>
       <ul class="footer-links">
         <li>
           <a href="#">HOME</a>
         </li>
+
         <li>
           <a href="#">EMPRESA</a>
         </li>
+
         <li>
           <a href="#">CLIENTES</a>
         </li>
+
         <li>
           <a href="#">CONTATO</a>
         </li>
       </ul>
+
       <p>© 2024 Projeto realizado por Paulo Lemes</p>
     </footer>
+
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
   </body>
 </html>
