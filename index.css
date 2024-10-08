@@ -1,4 +1,4 @@
-@import url(styles/header.css); 
+@import url(styles/header.css);
 
 :root {
   --primary-color: #0c4a82;
@@ -22,6 +22,11 @@ body {
   font-family: sans-serif;
   color: var(--secondary-color);
   transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  scroll-behavior: smooth;
 }
 
 ul,
@@ -50,4 +55,35 @@ input {
   font-size: 100%;
   border: none;
   background: none;
+}
+
+/* RODAPE */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #454545;
+  font-weight: 600;
+  min-height: 10rem;
+  padding: 1.2rem 1rem 3.2rem 1rem;
+}
+
+footer p {
+  color: var(--base-color);
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-links {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
 }
