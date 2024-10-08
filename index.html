@@ -3,11 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Teste - Grupo Ideal Trends</title>
   </head>
   <body>
-    <h1>Teste Front End - GIT</h1>
+    <header>
+      <div id="phone-contacts">
+        <p>11 1234-5678</p>
+        <p>11 8765-4321</p>
+      </div>
+      <nav>
+        <a href="#">
+          <img
+            id="logo-img"
+            src="./assets/logo-git.png"
+            alt="Logotipo Grupo Ideal Trends"
+          />
+        </a>
+        <button id="menu-icon" type="button" onclick="openSideNav()">
+          &#9776;
+        </button>
+        <ul id="nav-links" class="side-nav">
+          <li>
+            <a
+              href="javascript:void(0)"
+              class="close-btn"
+              onclick="closeSideNav()"
+              >&times;</a
+            >
+          </li>
+          <li>
+            <a href="#">HOME</a>
+          </li>
+          <li>
+            <a href="#">EMPRESA</a>
+            <ul class="submenu">
+              <li><a href="#">SUBMENU 1</a></li>
+              <li><a href="#">SUBMENU 1</a></li>
+              <li>
+                <a href="#">SUBMENU 1</a>
+                <ul class="submenu">
+                  <li><a href="#">SUBMENU 2</a></li>
+                  <li><a href="#">SUBMENU 2</a></li>
+                  <li><a href="#">SUBMENU 2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">CLIENTES</a>
+          </li>
+          <li>
+            <a href="#">CONTATO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <script src="script.js"></script>
   </body>
 </html>
