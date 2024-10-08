@@ -75,6 +75,7 @@ input {
 
 #content {
   display: flex;
+  justify-content: center;
   gap: 5rem;
   padding: 1rem 10rem;
 }
@@ -88,6 +89,29 @@ input {
 #content img {
   min-width: 20rem;
   height: 13rem;
+}
+
+@media screen and (max-width: 1000px) {
+  #content {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  #content div h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #content {
+    padding: 1rem 1rem;
+  }
+
+  #content img {
+    width: 100%;
+    min-width: auto;
+    max-height: 13rem;
+  }
 }
 
 /* FEATURED BOXES */
@@ -120,11 +144,17 @@ input {
   scale: 1.05;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   #featured-boxes h2 {
     text-align: center;
   }
 
+  #featured-boxes div {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 600px) {
   #featured-boxes {
     padding: 2rem 1rem;
     flex-wrap: wrap;
