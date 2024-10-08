@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     perPage: 1,
     autoplay: true,
     interval: 10000,
-    gap: "1rem",
   }).mount();
 });
 
