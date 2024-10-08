@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página fictícia construída com o objetivo de realização de teste de Front End, para a empresa GIT - Grupo Ideal Trends."
+    />
     <link rel="stylesheet" href="./index.css" />
     <link
       rel="stylesheet"
@@ -28,18 +32,25 @@
           />
         </a>
 
-        <button id="menu-icon" type="button" onclick="openSideNav()">
+        <button
+          id="menu-icon"
+          type="button"
+          onclick="openSideNav()"
+          aria-label="Abrir menu"
+        >
           &#9776;
         </button>
 
         <ul id="nav-links" class="side-nav">
           <li>
-            <a
-              href="javascript:void(0)"
+            <button
+              type="button"
               class="close-btn"
               onclick="closeSideNav()"
-              >&times;</a
+              aria-label="Fechar menu"
             >
+              &times;
+            </button>
           </li>
 
           <li>
@@ -82,12 +93,14 @@
             <ul class="splide__list">
               <li class="splide__slide">
                 <img
+                  loading="lazy"
                   src="./assets/git-companies.png"
                   alt="Companhias do Grupo Ideal Trends"
                 />
               </li>
               <li class="splide__slide">
                 <img
+                  loading="lazy"
                   src="./assets/git-banner.jpg"
                   alt="Banner Grupo Ideal Trends"
                 />

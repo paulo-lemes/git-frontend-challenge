@@ -3,7 +3,7 @@
 
 :root {
   --primary-color: #0c4a82;
-  --secondary-color: #aaa9a9;
+  --secondary-color: #636363;
   --base-color: #fff;
 }
 
@@ -106,8 +106,9 @@ input {
 }
 
 #content img {
-  min-width: 20rem;
-  height: 13rem;
+  max-width: 20rem;
+  max-height: 15rem;
+  aspect-ratio: 1.5;
 }
 
 @media (max-width: 1000px) {
@@ -129,8 +130,6 @@ input {
 
   #content img {
     width: 100%;
-    min-width: auto;
-    max-height: 13rem;
   }
 }
 
@@ -202,6 +201,10 @@ footer {
 footer p {
   color: var(--base-color);
   text-align: center;
+}
+
+.footer-links li a {
+  color: #c2c2c2;
 }
 
 .footer-links li a:hover {
