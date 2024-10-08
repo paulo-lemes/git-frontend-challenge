@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="./index.css" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
     />
     <link rel="shortcut icon" href="./assets/favicon.ico" />
@@ -18,7 +22,7 @@
 
   <body>
     <header>
-      <div id="phone-contacts">
+      <div class="phone-contacts">
         <p>11 1234-5678</p>
         <p>11 98765-4321</p>
       </div>
@@ -26,14 +30,14 @@
       <nav>
         <a href="#">
           <img
-            id="logo-img"
+            class="logo-img"
             src="./assets/logo-git.png"
             alt="Logotipo Grupo Ideal Trends"
           />
         </a>
 
         <button
-          id="menu-icon"
+          class="menu-icon"
           type="button"
           onclick="openSideNav()"
           aria-label="Abrir menu"
@@ -41,7 +45,7 @@
           &#9776;
         </button>
 
-        <ul id="nav-links" class="side-nav">
+        <ul id="sidebar" class="nav-links side-nav">
           <li>
             <button
               type="button"
@@ -87,7 +91,7 @@
     </header>
 
     <main>
-      <section id="slider">
+      <section class="slider">
         <div class="splide">
           <div class="splide__track">
             <ul class="splide__list">
@@ -110,7 +114,7 @@
         </div>
       </section>
 
-      <section id="content">
+      <section class="content">
         <div>
           <h1 class="">TESTE DE HTML E CSS</h1>
 
@@ -135,7 +139,7 @@
         <img src="./assets/worldmap-banner.png" alt="Mapa mundi em cor azul" />
       </section>
 
-      <section id="featured-boxes">
+      <section class="featured-boxes">
         <h2>BOXES DE DESTAQUE</h2>
 
         <div>
@@ -209,7 +213,42 @@
         </li>
       </ul>
 
-      <p>© 2024. Projeto realizado por Paulo Lemes.</p>
+      <div>
+        <p>© 2024. Projeto realizado por Paulo Lemes.</p>
+
+        <ul class="social-links">
+          <li>
+            <a
+              href="https://github.com/paulo-lemes"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link para o perfil de Paulo Lemes no Github"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/-paulolemes/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link para o perfil de Paulo Lemes no LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send/?phone=5511993385824&text&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link para o número de Paulo Lemes no Whatsapp"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
     <script src="script.js"></script>

@@ -1,4 +1,4 @@
-#phone-contacts {
+.phone-contacts {
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
@@ -16,18 +16,18 @@ nav {
   font-size: 1.5rem;
 }
 
-#logo-img {
+.logo-img {
   width: 10rem;
 }
 
-#nav-links {
+.nav-links {
   display: flex;
   gap: 2rem;
   font-weight: 500;
   overflow: hidden;
 }
 
-#menu-icon {
+.menu-icon {
   display: none;
 }
 
@@ -37,7 +37,7 @@ nav {
 }
 
 @media (max-width: 1000px) {
-  #phone-contacts {
+  .phone-contacts {
     gap: 2rem;
     padding: 0.5rem 5rem;
   }
@@ -47,22 +47,22 @@ nav {
     font-size: 1.2rem;
   }
 
-  #nav-links {
+  .nav-links {
     gap: 1rem;
   }
 }
 
 @media (max-width: 600px) {
-  #phone-contacts {
+  .phone-contacts {
     gap: 1rem;
     padding: 0.5rem 1rem;
   }
 
-  #logo-img {
+  .logo-img {
     width: 7rem;
   }
 
-  #menu-icon {
+  .menu-icon {
     display: block;
     font-size: 2.5rem;
     color: var(--secondary-color);
@@ -73,7 +73,7 @@ nav {
     padding: 1rem;
   }
 
-  #nav-links {
+  .nav-links {
     flex-direction: column;
     gap: 0;
   }
@@ -96,7 +96,7 @@ nav {
   color: var(--secondary-color);
 }
 
-#nav-links li:hover > .submenu {
+.nav-links li:hover > .submenu {
   display: block;
 }
 
@@ -128,7 +128,7 @@ nav {
     padding: 0.5rem 1rem;
   }
 
-  #nav-links li:hover > .submenu {
+  .nav-links li:hover > .submenu {
     display: block;
   }
 
